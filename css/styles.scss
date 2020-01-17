@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC:400,500&display=swap'),url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-137deg, #DA827F 0%, #EAC5C3 100%);
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 1.5rem;
+    color: #dcdeed;
+}
+
+.App {
+    width: 350px;
+    height: 600px;
+    border-radius: 6px;
+    background: #D9534F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 499px) {
+    .App {
+        height: 100%;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    body {
+        background: #D9534F;
+        touch-action: manipulation;
+    }
+}
+
+// Pomodoro.scss
+
+.pomodoro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+@media (max-width: 499px) {
+    .pomodoro {
+        height: 100%;
+    }
+}
+
+.title {
+    font-family: "Pacifico", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2.25px;
+    text-align: center;
+}
+.wrapper {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    position: absolute;
+    z-index: 2;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counterType {
+    font-size: 1rem;
+}
+
+#time-left {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Session {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 1rem 0;
+}
+
+.wrapperDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    font-size: 0.7rem;
+    color: #B1FD82;
+    font-size: 1.125;
+}
+
+.time {
+    display: inline-block;
+    font-size: 1.5rem;
+
+    &::after {
+        content: ' mins';
+    }
+}
+
+.ctrlBtn {
+    background: #f2f4f1;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #34394c;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+}
+
+.PlayPause {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1rem 0 2rem 0;
+}
+
+
+.Button {
+    background: #f2f4f1;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #34394c;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
