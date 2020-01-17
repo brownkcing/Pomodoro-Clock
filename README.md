@@ -1,4 +1,4 @@
-<div><h1 align="center" Pomodoro-Clock</h1></div>
+<p><h1 align="center" Pomodoro-Clock</h1></p>
 ## Pomodoro Clock project for freeCodeCamp Front-End Development certification<
 <p align="center">
   <img src="https://github.com/brownkcing/Pomodoro-Clock/blob/master/pomodoro.jpg"> </img>
